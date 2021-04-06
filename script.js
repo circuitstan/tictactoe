@@ -1,18 +1,28 @@
 const gameBoard = (() => {
-    let x = ""
-    let y = ""
-    let gameBoard = ["X", "0", "X", "0", "X", "0", "X", "0", "X"]
+    let selections = ["X", "0", "X", "0", "X", "0", "X", "0", "X"]
+    //let selections = []
     return {
-        gameBoard
+        selections
     }
 })()
 
 const displayController = (() => {
-
+    let mark = gameBoard.selections
+    for (let i = 0; i < mark.length; i++) {
+        let div = document.getElementById(i)        
+        div.innerText = mark[i]
+    }
+    addEventListener('click', (e) => {
+        console.log(e)
+        })
 })()
 
-const player = () => {
+const player = (marker) => {
     
+    return {
+        marker
+    }
 }
 
-const container = document.getElementById('container')
+const player1 = player("X")
+const player2 = player("0")
