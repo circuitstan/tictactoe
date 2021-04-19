@@ -1,6 +1,17 @@
 * {
     background-color: blanchedalmond;
+    font-family:'Times New Roman', Times, serif;
     
+}
+
+#reset {
+    width: 153px;
+    height: 153px;
+    font-size: 16px;
+    position: fixed;
+    left: 64%;
+    top: 175px;
+    border: solid black 1px;
 }
 
 .grid-container {

@@ -130,6 +130,26 @@ const displayController = (() => {
             }
         }
         })
+    const resetGame = () => {
+        console.log("hey")
+        mark = []
+        diag1 = 0
+        diag2 = 0
+        row1 = 0
+        row2 = 0
+        row3 = 0
+        col1 = 0
+        col2 = 0
+        col3 = 0
+        count = 0
+        for (let i = 0; i < 9; i++) {
+            let div = document.getElementById(i)
+            div.innerText = ""
+        }
+    }
+    return {
+        resetGame
+    }
 })()
 
 const player = (marker, name) => {
